@@ -1,0 +1,28 @@
+/*:root {
+	--coral: #FF7A63;
+	--jade:  #275244;
+}
+*/
+body{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-color: #275244;
+    height: 90vh;
+}
+
+.text-color{
+    color: #FF7A63;
+}
+
+.center{
+    margin: 25%;
+}
+audio:hover, audio:focus, audio:active{
+    box-shadow: 15px 15px 20px rgb(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+audio{
+    transition: all 0.3s linear;
+    box-shadow: 2px, 2px, 4px 0px #000340;
+    border-radius: 7px;
+}
