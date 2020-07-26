@@ -1,214 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scake=1.0">
-    <meta http-equiv="X-UA-compatible" content="ie=edge">
-    <script src="jqyery-1.10.2.min.js"></script>
-    <title>Music Web</title>
-    
-        <!-- Bootstrap CDN -->
-        <link 
-        rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-        crossorigin="anonymous"/>
-    
-        <!-- FontAwesome CDN-->
-        <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
-    
-        <!-- Slick Slider-->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>    
-
-    <!--main stylesheet-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="audio.css">
-    <link rel="stylesheet" href="Local Histories.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>포트폴리오</title>
 </head>
 <body>
-    <header>
-        <!--
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-12">
-                    <div class="btn-group">
-                        <button
-                        class="btn border dropdown-toggle my-md-4 my-2 text-white"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false">
-                        USD
-                        </btutton>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">ERU-Euro</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4  col-12 text-center">
-                    <h2 class="my-md-3 site-title text-white">Music Magazine</h2>
-                </div>
-                <div class="col-md-4 col-12 text-right">
-                    <p class="my-md-4 header-links">
-                        <a href="#" class="px-2">Sign In</a>
-                        <a href="#" class="px-1">Create an Account</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white">
+    <div class="wrap">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">
-                            HOME <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mood.html">Mood</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="jazz.html">Jazz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="lo-fi.html">lo-fi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="citypop.html">City Pop</a>
-                        </li>
+        <header class="header">
+            <h1>PlayList</h1>
+            <ul onclick="doDisplay()">
+                <li>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
+            </ul>
+        </header>
+
+        <main class="main">
+            <h6 class="title">정승환 눈사람</h6>
+            <div class="lyrics">
+                <p>멀리 배웅하던 길</p>
+                <p>여전히 나는 그곳에 서서</p>
+            </div>
+            <div id="menu">
+                <h6 id="test">재생목록</h6>
+                <div class="list">
+                    <ul>
+                        <li>정승환 눈사람</li>
                     </ul>
                 </div>
-            </nav>
-        </div>
-        -->
-        <!--
-        <video style="width: 100%; height:auto;" muted="" autoplay="" loop="" playsinline="" onloadedmetadata="this.muted = true">
-            <source src="images/Pexels Videos 4725.mp4">
-        </video>
-        -->
-    </header>
-<!-- main -->
-<section class="wrapper">
-	<div class="span-all">
-		<h1 class="title serif caps centre">MUSIC<br>Magazine</h1>
-		<p class="sans centre summary">2020.04 호 <!--&ndash; 29.09.2019--></p>
-	</div>
-	<div class="span-third">
-        <a href="mood.html"><p class="serif accent">Mood</p></a>
-        <a href="jazz.html"><p class="serif accent">Jazz</p></a>
-        <a href="lo-fi.html"><p class="serif accent">Lo-fi</p></a>
-        <a href="citypop.html"><p class="serif accent">City Pop</p></a>
-        <br><br><br><br><br><br><br><br><br><br>
-		<p>
-            <img src="images/저녁 학교 창가.gif" alt="">
-        </p>
-	</div>
-	<div class="span-twothirds">
-		<p>
-            <img src="images/뺨2.gif" alt="">
-        </p>
-		<p class="sans summary justify">&bdquo;The history of art and art's condition at any time are pretty messy&ldquo; schreibt Donald Judd 1964 in einem Artikel, der sich der New Yorker Kunstszene widmet. Er wendet sich darin gegen traditionelle Unterscheidungen von Stilen und Gattungen
-			und pl&auml;diert f&uuml;r eine ungezwungene Begegnung mit Kunstwerken. Judds Analysis einer lokalen Szene ist Augangspunkt f&uuml;r das Experiment. Werke aus der Friedrich Christian Flick Collection und der Sammlung der Nationalgalerie, erg&auml;zt
-			durch ausgew&auml;hlte Leihgaben, in den Kontext ihrer Entstehung zu bringen.</p>
-		<p class="sans summary">Welche Kunst war pr&auml;gend f&uuml;r Donald Judd? Was Verbindet Konrad Lueg, Sigmar Polke und Gerhard Richter? Welche Galerien haben Bruce Nauman oder Jenny Holzer in ihren fr&uuml;hen Karrierephasen unterst&uuml;tzt? Mintunter ungew&ouml;hnliche
-			Werk-Aufstellungen liefern Momentaufnahmen aus dem New York und D&uuml;sseldorf der 1960er- und 1970er-Jahre, dem K&ouml;ln der 1980er-, dem Berlin und Los Angeles der 1990er Jahre.</p>
-		<p class="sans summary">Im Fr&uuml;hjahr 2019 erscheint eine Publikation zur Ausstellung.</p>
-	</div>
-	<div class="span-half">
-		<p class="fine-print justify sans">Abbildungen/Images Vorne/Front: Carl Andre, 5 x 20 Altstadt Rectangle, 1967, Installationansicht Galerie Konrad Frischer &copy; Archive Dorothee und Konrad Fischer, Stiftung Kunstsammlung Nordrhein-Westfalen, VG Bild-Kundst, Bonn 2018/Foto: Fred Kliche/Courtesy:
-			Zentralarchive des internationalalen Kunsthandels ZADIK; Richard Jackson, Untitled(Wall Painting), 1988/2006 &copy; Saatliche Museen zu Berlin, Nationalgalerie/Foto: Roman Marz/Courtesy: Friedrich Christian Flick Collection im Hamburger Bahnhof/Richard
-			Jackson und Hauser &amp; Wirth; Hinten/Back: George Segal,
-	</div>
-	<div class="span-half">
-		<p class="fine-print justify sans">Man Installing Pepsi-Sign, 1973 &copy; The George and Helen Segal Foundation, VG Bild-Kunst, Bonn 2018 &copy; Staatliche Museen zu Berlin, Nationalgalerie/Foto; Andres Kilger/ Courtesy: Fredrich Christian Flick Collection im Hamburger Bahnhof; Cindy
-			Sherman, Untitled (#123), 1983 &copy; Staatliche Museen zu Berlin, Nationalgalerie/Foto: Stefan Cindy Sherman, Spr&uuml; Magers und Metro Pictures.<br> Gestaltung/Graphic design NFL Team, www.nfl-team.de</p>
-	</div>
-	<div class="centre span-half">
-        <p>
-            <img src="images/지하철.gif" alt="">
-        </p>
-	</div>
-	<div class="span-fourth serif summary">
-		<p class="text-color">Classic 1900s Lofi</p>
-        <audio controls preload="metadata">
-            <source src="audio/lo-fi/Classic 1900s Lounge Lofi Mix.mp3" type="audio/mpeg" />
-        </audio>
-	</div>
-	<div class="serif summary line-left span-fourth">
-		<p class="text-color">Cowboy Bebop Tracks</p>
-        <audio controls preload="metadata">
-            <source src="audio/Mood/Cowboy Bebop Tracks.mp3" type="audio/mpeg" />
-        </audio>
-	</div>
-	<div class="summary span-fourth sans">
-        <p class="text-color">Plastic Love Short ver</p>
-        <audio controls preload="metadata">
-            <source src="audio/City pop/竹内まりや　「Plastic Love」Short ver.mp3" type="audio/mpeg" />
-        </audio>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span>&copy; COPYRIGHT</span>
+        </footer>
+
     </div>
-	<div class="line-left summary span-fourth sans">
-		<p class="text-color">도시의 설레임이 가득한 일본 시티팝</p>
-        <audio controls preload="metadata">
-            <source src="audio/City Pop/도시의 설레임이 가득한 일본 시티팝  Japanese City Pop Mix Vol.4.mp3" type="audio/mpeg" />
-        </audio>
-	</div>
-	<div class="line-left span-fourth summary sans">
-		<p class="text-color">50s & 60s vibes Lofi</p>
-        <audio controls preload="metadata">
-            <source src="audio/lo-fi/50s & 60s vibes Lofi.mp3" type="audio/mpeg" />
-        </audio>
-	</div>
-	<div class="line-left span-fourth summary sans">
-		<p class="text-color">잠만 자는데도 잠잠했으면 좋겠다</p>
-        <audio controls preload="metadata">
-            <source src="audio/Jazz/잠만 자는데도 잠잠했으면 좋겠다.mp3" type="audio/mpeg" />
-        </audio>
-	</div>  
-	<div class="span-threefourths sans summary justify">
-		<p>The history of art and art's condition at any time are pretty messy", Donald Judd wrote in 1964 in an article on the New York art scene. In this piece he opposed traditional differentiations of style and genre, advocating instead a more casual encounter
-			with works of art. Judd's analysis of the local art scene is the starting point for an experiment that takes works from the Friedrich Christian Flick Collection and the Collectino of the Nationalgalerie &ndash; enhanced by selected loans &ndash; and
-			resituates them within the context of their making.</p>
-		<p>Which art influenced Donald Judd? What connects Konrad Lueg, Sigmar Polke and Gerhard Richter? Which galleries supported Bruce Nauman and Jenny Holzer during the early stages of their careers? Occasionally unusual work constellations provide snapshots
-			of New York and D&uuml;sseldorf in the 1960s and 1970s, Cologne in the 1980s, Berlin and Los Angeles in the 1990s.</p>
-		<p>An exhibition catalogue will be published in spring 2019.</p>
-	</div>
-	<div class="span-fourth">
-		<p>
-            <img src="images/앉아서 전화.gif" alt="">
-        </p>
-	</div>
-
-	<div class="span-third">
-		<p class="sans">
-			Nationalgalerie im Hamburger Bahnhof &ndash; Museum f&uuml;r Gegenwart &ndash; Berlin</p>
-	</div>
-	<div class="line-left span-third">
-		<p class="sans">
-			Invalidenstraße 50-51<br/> 10557 Berlin</p>
-		<p class="sans">
-			www.smb.museum/hbf
-		</p>
-	</div>
-	<div class="line-left span-third">
-		<p class="sans fine-print">
-			Offnungszeiten/Opening hours<br/> Di, Mi, Fr/Tu, Wed, Fri 10-18<br/> Do/Thu 10-20<br/> Sa, So/Sat, Sun 11-19</p>
-	</div>
-    <br>
-</section>
-    </main>
-
-    <footer>
-
-    </footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/JS/main.js"></script>
 </body>
 </html>
